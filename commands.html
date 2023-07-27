@@ -1,347 +1,257 @@
 
 <!-- saved from url=(0062)file:///C:/3D_Software/Projects/fivetwo/Saved/ConsoleHelp.html -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="color-scheme" content="light dark"></head><body><div class="line-gutter-backdrop"></div><form autocomplete="off"><label class="line-wrap-control">Переносить строки<input type="checkbox" aria-label="Переносить строки"></label></form><table><tbody><span class="html-doctype">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</span>
-       
 <span class="html-tag">&lt;html&gt;</span>
 <span class="html-tag">&lt;title&gt;</span>UE5 Console Variables and Commands<span class="html-tag">&lt;/title&gt;</span>
 <span class="html-tag">&lt;body&gt;</span>
-
-
 <span class="html-tag">&lt;h1&gt;</span>Unreal Engine 5 Console Variables and Commands<span class="html-tag">&lt;/h1&gt;</span>
-
 <span class="html-tag">&lt;br&gt;</span>
-
 <span class="html-tag">&lt;div <span class="html-attribute-name">style</span>="<span class="html-attribute-value">padding:0px; margin:40px; min-width:450px; max-width:1250px;</span>"&gt;</span>
-
 <span class="html-tag">&lt;div <span class="html-attribute-name">style</span>="<span class="html-attribute-value">padding:0px; margin:20px</span>" &gt;</span>
-
-
 <span class="html-tag">&lt;form <span class="html-attribute-name">class</span>="<span class="html-attribute-value">iform</span>" <span class="html-attribute-name">onsubmit</span>="<span class="html-attribute-value">return false</span>" <span class="html-attribute-name">autocomplete</span>="<span class="html-attribute-value">off</span>"&gt;</span>
 <span class="html-comment">&lt;!-- onchange is when focus lost or enter, oninput is on each change --&gt;</span>
 <span class="html-tag">&lt;input <span class="html-attribute-name">id</span>='<span class="html-attribute-value">input1</span>' <span class="html-attribute-name">type</span>="<span class="html-attribute-value">search</span>" <span class="html-attribute-name">name</span>='<span class="html-attribute-value">input1</span>' <span class="html-attribute-name">style</span>="<span class="html-attribute-value">font-size:30px; padding:5px</span>" <span class="html-attribute-name">oninput</span>="<span class="html-attribute-value">OnInputChange()</span>" /&gt;</span>
 <span class="html-tag">&lt;/form&gt;</span>
-
-
 <span class="html-tag">&lt;div <span class="html-attribute-name">style</span>="<span class="html-attribute-value">margin-left:20px; line-height: 190%;</span>"&gt;</span>
-    <span class="html-tag">&lt;p <span class="html-attribute-name">id</span>="<span class="html-attribute-value">prefixdemo</span>"&gt;</span><span class="html-tag">&lt;/p&gt;</span>
+<span class="html-tag">&lt;p <span class="html-attribute-name">id</span>="<span class="html-attribute-value">prefixdemo</span>"&gt;</span><span class="html-tag">&lt;/p&gt;</span>
 <span class="html-tag">&lt;/div&gt;</span>
 <span class="html-tag">&lt;div <span class="html-attribute-name">style</span>="<span class="html-attribute-value">margin-left:20px;</span>"&gt;</span>
-    <span class="html-tag">&lt;p&gt;</span>
-        Type:<span class="html-tag">&lt;br&gt;</span>
-        <span class="html-tag">&lt;input <span class="html-attribute-name">type</span>="<span class="html-attribute-value">checkbox</span>" <span class="html-attribute-name">id</span>="<span class="html-attribute-value">Var</span>" <span class="html-attribute-name">onchange</span>="<span class="html-attribute-value">OnInputChange()</span>" <span class="html-attribute-name">name</span>="<span class="html-attribute-value">ConsoleVariables</span>" <span class="html-attribute-name">value</span>="<span class="html-attribute-value">ConsoleVariables</span>" <span class="html-attribute-name">checked</span> /&gt;</span>Console Variables<span class="html-tag">&lt;br&gt;</span>
-        <span class="html-tag">&lt;input <span class="html-attribute-name">type</span>="<span class="html-attribute-value">checkbox</span>" <span class="html-attribute-name">id</span>="<span class="html-attribute-value">Cmd</span>" <span class="html-attribute-name">onchange</span>="<span class="html-attribute-value">OnInputChange()</span>" <span class="html-attribute-name">name</span>="<span class="html-attribute-value">ConsoleCommands</span>" <span class="html-attribute-name">value</span>="<span class="html-attribute-value">ConsoleCommands</span>" <span class="html-attribute-name">checked</span> /&gt;</span>Console Commands<span class="html-tag">&lt;br&gt;</span>
-        <span class="html-tag">&lt;input <span class="html-attribute-name">type</span>="<span class="html-attribute-value">checkbox</span>" <span class="html-attribute-name">id</span>="<span class="html-attribute-value">Exec</span>" <span class="html-attribute-name">onchange</span>="<span class="html-attribute-value">OnInputChange()</span>" <span class="html-attribute-name">name</span>="<span class="html-attribute-value">Exec</span>" <span class="html-attribute-name">value</span>="<span class="html-attribute-value">Exec</span>" <span class="html-attribute-name">checked</span> /&gt;</span>Exec Commands
-    <span class="html-tag">&lt;/p&gt;</span>
-    <span class="html-tag">&lt;p&gt;</span>
-        <span class="html-tag">&lt;input <span class="html-attribute-name">type</span>="<span class="html-attribute-value">checkbox</span>" <span class="html-attribute-name">id</span>="<span class="html-attribute-value">SearchInHelpId</span>" <span class="html-attribute-name">onchange</span>="<span class="html-attribute-value">OnInputChange()</span>" <span class="html-attribute-name">name</span>="<span class="html-attribute-value">SearchInHelpName</span>" <span class="html-attribute-name">value</span>="<span class="html-attribute-value">SearchInHelpValue</span>" /&gt;</span>Search in help as well
-    <span class="html-tag">&lt;/p&gt;</span>
+<span class="html-tag">&lt;p&gt;</span>
+Type:<span class="html-tag">&lt;br&gt;</span>
+<span class="html-tag">&lt;input <span class="html-attribute-name">type</span>="<span class="html-attribute-value">checkbox</span>" <span class="html-attribute-name">id</span>="<span class="html-attribute-value">Var</span>" <span class="html-attribute-name">onchange</span>="<span class="html-attribute-value">OnInputChange()</span>" <span class="html-attribute-name">name</span>="<span class="html-attribute-value">ConsoleVariables</span>" <span class="html-attribute-name">value</span>="<span class="html-attribute-value">ConsoleVariables</span>" <span class="html-attribute-name">checked</span> /&gt;</span>Console Variables<span class="html-tag">&lt;br&gt;</span>
+<span class="html-tag">&lt;input <span class="html-attribute-name">type</span>="<span class="html-attribute-value">checkbox</span>" <span class="html-attribute-name">id</span>="<span class="html-attribute-value">Cmd</span>" <span class="html-attribute-name">onchange</span>="<span class="html-attribute-value">OnInputChange()</span>" <span class="html-attribute-name">name</span>="<span class="html-attribute-value">ConsoleCommands</span>" <span class="html-attribute-name">value</span>="<span class="html-attribute-value">ConsoleCommands</span>" <span class="html-attribute-name">checked</span> /&gt;</span>Console Commands<span class="html-tag">&lt;br&gt;</span>
+<span class="html-tag">&lt;input <span class="html-attribute-name">type</span>="<span class="html-attribute-value">checkbox</span>" <span class="html-attribute-name">id</span>="<span class="html-attribute-value">Exec</span>" <span class="html-attribute-name">onchange</span>="<span class="html-attribute-value">OnInputChange()</span>" <span class="html-attribute-name">name</span>="<span class="html-attribute-value">Exec</span>" <span class="html-attribute-name">value</span>="<span class="html-attribute-value">Exec</span>" <span class="html-attribute-name">checked</span> /&gt;</span>Exec Commands
+<span class="html-tag">&lt;/p&gt;</span>
+<span class="html-tag">&lt;p&gt;</span>
+<span class="html-tag">&lt;input <span class="html-attribute-name">type</span>="<span class="html-attribute-value">checkbox</span>" <span class="html-attribute-name">id</span>="<span class="html-attribute-value">SearchInHelpId</span>" <span class="html-attribute-name">onchange</span>="<span class="html-attribute-value">OnInputChange()</span>" <span class="html-attribute-name">name</span>="<span class="html-attribute-value">SearchInHelpName</span>" <span class="html-attribute-name">value</span>="<span class="html-attribute-value">SearchInHelpValue</span>" /&gt;</span>Search in help as well
+<span class="html-tag">&lt;/p&gt;</span>
 <span class="html-tag">&lt;/div&gt;</span>
-
-
 <span class="html-tag">&lt;/div&gt;</span>
-
-
-
-
 <span class="html-tag">&lt;div <span class="html-attribute-name">style</span>="<span class="html-attribute-value">margin:40px</span>" &gt;</span>
 <span class="html-tag">&lt;table <span class="html-attribute-name">id</span>="<span class="html-attribute-value">tabledemo</span>" <span class="html-attribute-name">width</span>="<span class="html-attribute-value">100%</span>"&gt;</span>
 <span class="html-tag">&lt;/table&gt;</span>
 <span class="html-tag">&lt;/div&gt;</span>
-
-
-
 <span class="html-tag">&lt;p <span class="html-attribute-name">id</span>="<span class="html-attribute-value">demo</span>"&gt;</span><span class="html-tag">&lt;/p&gt;</span>
-
 <span class="html-tag">&lt;br&gt;</span>
 <span class="html-tag">&lt;br&gt;</span>
 <span class="html-tag">&lt;b&gt;</span>Generated by:<span class="html-tag">&lt;/b&gt;</span> Unreal Engine 5 console command 'Help'<span class="html-tag">&lt;br&gt;</span>
 <span class="html-tag">&lt;b&gt;</span>Version:<span class="html-tag">&lt;/b&gt;</span> 0.95<span class="html-tag">&lt;br&gt;</span>
-<span class="html-tag">&lt;b&gt;</span>Last Update:<span class="html-tag">&lt;/b&gt;</span> 2023.03.22-17.38.04<span class="html-tag">&lt;br&gt;</span>
-
+<span class="html-tag">&lt;b&gt;</span>Last Update:<span class="html-tag">&lt;/b&gt;</span> 2023.07.27-11.24.52<span class="html-tag">&lt;br&gt;</span>
 <span class="html-tag">&lt;/div&gt;</span>
-
 <span class="html-tag">&lt;style <span class="html-attribute-name">type</span>="<span class="html-attribute-value">text/css</span>"&gt;</span>
 //body { background-color:#000000; color:#E0E0E0 }
-
 * {
-    font-family: ‘Times New Roman’, Times, serif;
- //   font-weight: bold;
-    
+font-family: ‘Times New Roman’, Times, serif;
+//   font-weight: bold;
 }
-
 h1 { color:#555555; font-size:32px; border-bottom:solid thin black; }
-
-
 table {
-    border:0px solid #ffffff; color:#000000; padding:16px; border-spacing:0px;
-    border-collapse:collapse;
-    }
-    
+border:0px solid #ffffff; color:#000000; padding:16px; border-spacing:0px;
+border-collapse:collapse;
+}
 td,th {
-    border:0px solid #bbbbbb;
-    vertical-align:top;
-    overflow:hidden;
-    padding:6px;
-    }
-
+border:0px solid #bbbbbb;
+vertical-align:top;
+overflow:hidden;
+padding:6px;
+}
 th {
-    background-color:#E0E0E0;
-    color: #000000;
-    text-align: left;
-    border: 1px solid #c0c0c0;
+background-color:#E0E0E0;
+color: #000000;
+text-align: left;
+border: 1px solid #c0c0c0;
 }
-
-
 a.prefix {
-    border: 0px solid;
-    padding: 3px;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-weight: bold;
-    text-decoration:none;
-    margin:4px;
-    white-space: nowrap;
+border: 0px solid;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+font-weight: bold;
+text-decoration:none;
+margin:4px;
+white-space: nowrap;
 }
-
 a.prefix:link {
-    border:1px solid #7777FF;
-    background-color:#ddddff;
-    color: #7777FF;
+border:1px solid #7777FF;
+background-color:#ddddff;
+color: #7777FF;
 }
-
-
 a.prefix:hover {
-    background-color:#7777FF;
-    color: #ddddff;
+background-color:#7777FF;
+color: #ddddff;
 }
-
 td {
-    font-family:"Lucida Console", Monaco, monospace;
-    padding:7px;
-    border:1px solid #cccccc;
+font-family:"Lucida Console", Monaco, monospace;
+padding:7px;
+border:1px solid #cccccc;
 }
-     
-
-
-        
-  
 <span class="html-tag">&lt;/style&gt;</span>
-
-
-
 <span class="html-tag">&lt;script&gt;</span>
-
-  
 //    document.write('&gt;' + "TYets".slice(-1).localeCompare("*") == 0  + '&lt;');
 //    document.write('&gt;' + "TYets*".slice(-1).localeCompare("*") == 0  + '&lt;');
-
 //    document.write('&gt;' + ("TYets".slice(-1).localeCompare("*") == 0) + '&lt;');
 //    document.write('&gt;' + ("TYets*".slice(-1).localeCompare("*") == 0) + '&lt;');
-
 function EscapeReg(str)
 {
- return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&amp;");
+return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&amp;");
 // .replace(/[^\w\s]/g, "\\$&amp;")
 }   
-    
 var ReBuildIncremental_prefixstr;
 var ReBuildIncremental_index;
 var ReBuildIncremental_bSearchInHelp;
 var ReBuildIncremental_bSearchInVar;
 var ReBuildIncremental_bSearchInCmd;
 var ReBuildIncremental_bSearchInExec;
-    
 // @param prefixstr needs to be no regular expression 
 function IsValid(prefixstr, cvar, bDoFilter)
 {
-    var name = cvar.name;
-    var help = cvar.help;
-    var type = cvar.type;
-
-    var bDo = true;
- 
-    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
-   
-    var re;
-   
-    if(prefixstr != "\\*")
-    {
-        // "Test*" means we search for a string starting with "Test"
-        // "Test" means we search for a string that has "Test" somewhere
-        var bStartsWith = prefixstr.slice(-2) == "\\*";
-    
-        if(bStartsWith)
-        {
-            var PrefixWithoutStar = prefixstr.slice(0, prefixstr.length - 2);
-            re = new RegExp("^" + PrefixWithoutStar, "gi");
-        }
-        else
-        {
-            re = new RegExp(prefixstr, "gi");
-        }
-        bDo = re.test(name);
-    
-        if(bDoFilter)
-        {
-            if(!bDo)
-            {
-                if(ReBuildIncremental_bSearchInHelp)
-                {
-                    bDo = re.test(help);
-                }
-            }
-        }
-    }
-    
-    if(bDoFilter)
-    {
-        if(bDo)
-        {
-            if(type == "Var")
-            {
-                if(!ReBuildIncremental_bSearchInVar) bDo = false;
-            }
-            else if(type == "Cmd")
-            {
-                if(!ReBuildIncremental_bSearchInCmd) bDo = false;
-            }
-            else if(type == "Exec")
-            {
-                if(!ReBuildIncremental_bSearchInExec) bDo = false;
-            }
-        }
-    }
-    return bDo;
+var name = cvar.name;
+var help = cvar.help;
+var type = cvar.type;
+var bDo = true;
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
+var re;
+if(prefixstr != "\\*")
+{
+// "Test*" means we search for a string starting with "Test"
+// "Test" means we search for a string that has "Test" somewhere
+var bStartsWith = prefixstr.slice(-2) == "\\*";
+if(bStartsWith)
+{
+var PrefixWithoutStar = prefixstr.slice(0, prefixstr.length - 2);
+re = new RegExp("^" + PrefixWithoutStar, "gi");
 }
-
-
+else
+{
+re = new RegExp(prefixstr, "gi");
+}
+bDo = re.test(name);
+if(bDoFilter)
+{
+if(!bDo)
+{
+if(ReBuildIncremental_bSearchInHelp)
+{
+bDo = re.test(help);
+}
+}
+}
+}
+if(bDoFilter)
+{
+if(bDo)
+{
+if(type == "Var")
+{
+if(!ReBuildIncremental_bSearchInVar) bDo = false;
+}
+else if(type == "Cmd")
+{
+if(!ReBuildIncremental_bSearchInCmd) bDo = false;
+}
+else if(type == "Exec")
+{
+if(!ReBuildIncremental_bSearchInExec) bDo = false;
+}
+}
+}
+return bDo;
+}
 function Rebuild(prefixstr)
 {
- prefixstr = EscapeReg(prefixstr);
-  
- ReBuildIncremental_prefixstr = prefixstr;
- ReBuildIncremental_index = 0;
- ReBuildIncremental_bSearchInHelp = document.getElementById("SearchInHelpId").checked;
- ReBuildIncremental_bSearchInVar = document.getElementById("Var").checked;
- ReBuildIncremental_bSearchInCmd = document.getElementById("Cmd").checked;
- ReBuildIncremental_bSearchInExec = document.getElementById("Exec").checked;
-  
- var aa = document.getElementById("prefixdemo");
- aa.innerHTML = "";
- for(index = 0; index &lt; cvars_prefix.length; index++) 
- {
-   aa.innerHTML += '&lt;a href="a" id="' + cvars_prefix[index].prefix +'" onclick="return OnLinkClick(this.id);" class=\"prefix"\&gt;' 
-        + cvars_prefix[index].name + "&amp;nbsp;(" + cvars_prefix[index].count + ")" + "&lt;/a&gt; ";
- }
-  
- // -----------------
-
- aa = document.getElementById("tabledemo");
- aa.innerHTML = "&lt;tr&gt;&lt;th&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Help&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;";
+prefixstr = EscapeReg(prefixstr);
+ReBuildIncremental_prefixstr = prefixstr;
+ReBuildIncremental_index = 0;
+ReBuildIncremental_bSearchInHelp = document.getElementById("SearchInHelpId").checked;
+ReBuildIncremental_bSearchInVar = document.getElementById("Var").checked;
+ReBuildIncremental_bSearchInCmd = document.getElementById("Cmd").checked;
+ReBuildIncremental_bSearchInExec = document.getElementById("Exec").checked;
+var aa = document.getElementById("prefixdemo");
+aa.innerHTML = "";
+for(index = 0; index &lt; cvars_prefix.length; index++) 
+{
+aa.innerHTML += '&lt;a href="a" id="' + cvars_prefix[index].prefix +'" onclick="return OnLinkClick(this.id);" class=\"prefix"\&gt;' 
++ cvars_prefix[index].name + "&amp;nbsp;(" + cvars_prefix[index].count + ")" + "&lt;/a&gt; ";
 }
-
+// -----------------
+aa = document.getElementById("tabledemo");
+aa.innerHTML = "&lt;tr&gt;&lt;th&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/th&gt;&lt;th&gt;&lt;b&gt;Help&lt;/b&gt;&lt;/th&gt;&lt;/tr&gt;";
+}
 function RebuildIncremental(UpdateCount)
 { 
- aa = document.getElementById("tabledemo");
-
- for(Update = 0; Update &lt; UpdateCount; Update++) 
- {
-  if(ReBuildIncremental_index &gt;= cvars.length) 
-   break;
-
-  if(IsValid(ReBuildIncremental_prefixstr, cvars[ReBuildIncremental_index], true))
-  {
-    var help = cvars[ReBuildIncremental_index].help;
-     
-    help = help.replace(/\n/g, "&lt;br&gt;");
-     
-    aa.innerHTML += "&lt;tr&gt;&lt;td style='color: #ff8844;' &gt;" + cvars[ReBuildIncremental_index].name + "&lt;/td&gt;&lt;td&gt;" + help + "&lt;/td&gt;&lt;/tr&gt;";
-  }
-   
-  ++ReBuildIncremental_index;
- }
- 
+aa = document.getElementById("tabledemo");
+for(Update = 0; Update &lt; UpdateCount; Update++) 
+{
+if(ReBuildIncremental_index &gt;= cvars.length) 
+break;
+if(IsValid(ReBuildIncremental_prefixstr, cvars[ReBuildIncremental_index], true))
+{
+var help = cvars[ReBuildIncremental_index].help;
+help = help.replace(/\n/g, "&lt;br&gt;");
+aa.innerHTML += "&lt;tr&gt;&lt;td style='color: #ff8844;' &gt;" + cvars[ReBuildIncremental_index].name + "&lt;/td&gt;&lt;td&gt;" + help + "&lt;/td&gt;&lt;/tr&gt;";
 }
-
- 
+++ReBuildIncremental_index;
+}
+}
 function OnTick()
 {
- // larger number means faster search but more hitching
- RebuildIncremental(25);
+// larger number means faster search but more hitching
+RebuildIncremental(25);
 }
-
 function BuildCounts()
 {
-  aa = document.getElementById("demo");
-
-  for(i = 0; i &lt; cvars_prefix.length; i++) 
-  {
-    var prefixstr = cvars_prefix[i].prefix + "*";
-    var count = 0;
-    
-    prefixstr = EscapeReg(prefixstr);
-    
-    for(e = 0; e &lt; cvars.length; e++)
-    {
-     if(IsValid(prefixstr, cvars[e], false))
-     {
-       ++count;
-     }
-    }
-    
-    cvars_prefix[i].count = count;
-  }
+aa = document.getElementById("demo");
+for(i = 0; i &lt; cvars_prefix.length; i++) 
+{
+var prefixstr = cvars_prefix[i].prefix + "*";
+var count = 0;
+prefixstr = EscapeReg(prefixstr);
+for(e = 0; e &lt; cvars.length; e++)
+{
+if(IsValid(prefixstr, cvars[e], false))
+{
+++count;
 }
-
+}
+cvars_prefix[i].count = count;
+}
+}
 function OnInputChange()
 {
- var value = document.forms[0]["input1"].value;
- Rebuild(value);
+var value = document.forms[0]["input1"].value;
+Rebuild(value);
 }
-
 function OnLinkClick(value)
 {
- value += "*";
-
- document.forms[0]["input1"].value = value;
-
- document.getElementById("SearchInHelpId").checked = false;
- 
- Rebuild(value);
-
- return false;
+value += "*";
+document.forms[0]["input1"].value = value;
+document.getElementById("SearchInHelpId").checked = false;
+Rebuild(value);
+return false;
 }
-
-
-
 function changeText(id) { 
-    id.innerHTML = "Ooops!";
+id.innerHTML = "Ooops!";
 }
-
-
 var cvars_prefix = [
-  
-  {prefix: "", name:"All", count:0 },
-  {prefix: "r.", name:"Renderer", count:0},
-  {prefix: "s.", name:"Sound", count:0},
-  {prefix: "t.", name:"Timer", count:0},
-  {prefix: "rhi.", name:"RHI", count:0},
-  {prefix: "net.", name:"Network", count:0},
-  {prefix: "opengl.", name:"OpenGL", count:0},
-  {prefix: "g.", name:"Game", count:0},
-  {prefix: "sg.", name:"ScalabilityGroups", count:0},
-  {prefix: "slate.", name:"Slate", count:0},
-  {prefix: "p.", name:"Physics", count:0},
-  {prefix: "showflag.", name:"Showflags", count:0},
-  {prefix: "FX.", name:"Particle FX system", count:0},
- // {prefix: ".", name:"Remaining", count:0},
-   ];
-
-  var cvars = [
-  
-  // all cvars and command in this form: 
-  // {name: "a.ParallelAnimEvaluation", help:"If 1, animation evaluation will be run across the task graph system. If 0, evaluation will run purely on the game thread"},
-  {name: "a.AccumulateLocalSpaceAdditivePose.ISPC", help:"Whether to use ISPC optimizations for accumulating local space additive pose", type:"Var"},
+{prefix: "", name:"All", count:0 },
+{prefix: "r.", name:"Renderer", count:0},
+{prefix: "s.", name:"Sound", count:0},
+{prefix: "t.", name:"Timer", count:0},
+{prefix: "rhi.", name:"RHI", count:0},
+{prefix: "net.", name:"Network", count:0},
+{prefix: "opengl.", name:"OpenGL", count:0},
+{prefix: "g.", name:"Game", count:0},
+{prefix: "sg.", name:"ScalabilityGroups", count:0},
+{prefix: "slate.", name:"Slate", count:0},
+{prefix: "p.", name:"Physics", count:0},
+{prefix: "showflag.", name:"Showflags", count:0},
+{prefix: "FX.", name:"Particle FX system", count:0},
+// {prefix: ".", name:"Remaining", count:0},
+];
+var cvars = [
+// all cvars and command in this form: 
+// {name: "a.ParallelAnimEvaluation", help:"If 1, animation evaluation will be run across the task graph system. If 0, evaluation will run purely on the game thread"},
+{name: "a.AccumulateLocalSpaceAdditivePose.ISPC", help:"Whether to use ISPC optimizations for accumulating local space additive pose", type:"Var"},
 {name: "a.AnimNode.AimOffsetLookAt.Debug", help:"Toggle LookAt AimOffset debug", type:"Var"},
 {name: "a.AnimNode.AimOffsetLookAt.Enable", help:"Enable/Disable LookAt AimOffset", type:"Var"},
 {name: "a.AnimNode.ControlRig.Debug", help:"Set to 1 to turn on debug drawing for AnimNode_ControlRigBase", type:"Var"},
@@ -869,6 +779,7 @@ var cvars_prefix = [
 {name: "ControlRig.Hierarchy.TraceCallstack", help:"if nonzero we will record the callstack for any trace entry.\nOnly works if(ControlRig.Hierarchy.TraceEnabled != 0)", type:"Var"},
 {name: "ControlRig.Hierarchy.TraceOnSpawn", help:"sets the number of frames to trace when a new hierarchy is spawned", type:"Var"},
 {name: "ControlRig.Hierarchy.TracePrecision", help:"sets the number digits in a float when tracing hierarchies.", type:"Var"},
+{name: "ControlRig.Sequencer.ClickSelectThroughGizmo", help:"When false you can\'t click through a gizmo and change selection if you will select the gizmo when in Animation Mode, default to false.", type:"Var"},
 {name: "ControlRig.Sequencer.SelectedKeysSelectControls", help:"When true when we select a key in Sequencer it will select the Control, by default false.", type:"Var"},
 {name: "ControlRig.Sequencer.SelectedSectionSetsSectionToKey", help:"When true when we select a channel in a section, if it\'s the only section selected we set it as the Section To Key, by default false.", type:"Var"},
 {name: "ControlRig.StackDetailedLabels", help:"Set to true to turn on detailed labels for the execution stack widget", type:"Var"},
@@ -931,6 +842,7 @@ var cvars_prefix = [
 {name: "d3d12.BatchResourceBarriers", help:"Whether to allow batching resource barriers", type:"Var"},
 {name: "D3D12.Bindless.ResourceDescriptorHeapSize", help:"Bindless resource descriptor heap size", type:"Var"},
 {name: "D3D12.Bindless.SamplerDescriptorHeapSize", help:"Bindless sampler descriptor heap size", type:"Var"},
+{name: "d3d12.BindResourceLabels", help:"Whether to enable binding of debug names to D3D12 resources.", type:"Var"},
 {name: "D3D12.DumpRayTracingGeometries", help:"Dump memory allocations for ray tracing resources.", type:"Cmd"},
 {name: "D3D12.DumpRayTracingGeometriesToCSV", help:"Dump all memory allocations for ray tracing resources to a CSV file on disc.", type:"Cmd"},
 {name: "D3D12.DumpTrackedAllocationCallstacks", help:"Dump all tracked d3d12 resource allocation callstacks.", type:"Cmd"},
@@ -1345,6 +1257,7 @@ var cvars_prefix = [
 {name: "fx.Niagara.Debug.PlaybackRate", help:"Set playback rate\n", type:"Cmd"},
 {name: "fx.Niagara.Debug.SpawnComponent", help:"Spawns a NiagaraComponent using the given parameters", type:"Cmd"},
 {name: "fx.Niagara.DebugDraw.Enabled", help:"Enable or disable the Debug Draw Data Interface, note does not fully disable the overhead.", type:"Var"},
+{name: "fx.Niagara.DecalRenderer.DrawDebug", help:"When none zero will draw debug information.", type:"Var"},
 {name: "fx.Niagara.DecalRenderer.Enabled", help:"If == 0, Niagara Decal Renderers are disabled.", type:"Var"},
 {name: "fx.Niagara.DelayScriptAsyncOptimization", help:"Should we delay the async optimization until the emitter is activated?", type:"Var"},
 {name: "fx.Niagara.DeletePythonFilesOnError", help:"This determines whether we keep the intermediate python used by module/emitter versioning around when they were executed and resulted in an error.", type:"Var"},
@@ -1671,6 +1584,7 @@ var cvars_prefix = [
 {name: "ImageWriteQueue.MaxQueueSize", help:"The maximum number of queued image write tasks allowable before the queue will block when adding more.Default is to use 4 times the number of cores available or 16 when multithreading is disabled on the command line.", type:"Var"},
 {name: "ImgMedia.FieldOfViewMultiplier", help:"Multiply the field of view for active cameras by this value, generally to increase the frustum overall sizes to mitigate missing tile artifacts.\n", type:"Var"},
 {name: "ImgMedia.FrameInvalidationMaxCount", help:"Maximum number of cached frames that can be invalidated when missing the latest mips/tiles.", type:"Var"},
+{name: "ImgMedia.ICVFX.InnerOnlyTiles", help:"This CVar will ignore tile calculation for all viewports except for Display Cluster inner viewports. User should enable upscaling on Media plate to display lower quality mips instead, otherwise other viewports will only display tiles loaded specifically for inner viewport and nothing else. \n", type:"Var"},
 {name: "ImgMedia.MipMapDebug", help:"Display debug on mipmaps and tiles used by the ImgMedia plugin.\n   0: off (default)\n   1: on\n", type:"Var"},
 {name: "ImgMedia.MipMapLevelPadding", help:"Value padded onto the estimated (minimum and maximum) mipmap levels used by the loader.\n", type:"Var"},
 {name: "InGamePerformanceTracking.Enabled", help:"If in-game performance tracking is enabled. Most games will likely not use or need this so it should be left disabled.", type:"Var"},
@@ -1683,6 +1597,7 @@ var cvars_prefix = [
 {name: "input.DisableHaptics", help:"If greater than zero, no haptic feedback is processed.", type:"Var"},
 {name: "input.GlobalAxisConfigMode", help:"Whether or not to apply Global Axis Config settings. 0 = Default (Mouse Only), 1 = All, 2 = None", type:"Var"},
 {name: "Input.ListAllHardwareDevices", help:"Log all the platform\'s currently available FHardwareDeviceIdentifier", type:"Cmd"},
+{name: "Input.ShouldAlwaysEvaluateForceFeedbackDuration", help:"Should the duration of a force feedback effect be evaluated every time it is called?", type:"Var"},
 {name: "Insights.RecordAllWorldTypes", help:"Gameplay Insights recording by default only records Game and PIE worlds.Toggle this value to 1 to record other world types.", type:"Var"},
 {name: "Interchange.FeatureFlags.Import.BMP", help:"Whether BMP support is enabled.", type:"Var"},
 {name: "Interchange.FeatureFlags.Import.DDS", help:"Whether DDS support is enabled.", type:"Var"},
@@ -2316,7 +2231,9 @@ var cvars_prefix = [
 {name: "p.Chaos.DebugDraw.ColorShapesByShapeType", help:"Whether to use shape type to define the color of the shapes instead of using the particle state ", type:"Var"},
 {name: "p.Chaos.DebugDraw.ConvexExplodeDistance", help:"Explode convex edges by this amount (useful for looking at convex integrity)", type:"Var"},
 {name: "p.Chaos.DebugDraw.Deformable.KinematicParticle", help:"Debug draw the deformables kinematic particles. [def: false]", type:"Var"},
+{name: "p.Chaos.DebugDraw.Deformable.RigidCollisionGeometry", help:"Debug draw the deformable solvers rigid collision geometry. [def: false]", type:"Var"},
 {name: "p.Chaos.DebugDraw.Deformable.TetrahedralParticle", help:"Debug draw the deformable solvers tetrahedron. [def: false]", type:"Var"},
+{name: "p.Chaos.DebugDraw.Deformable.TransientKinematicParticle", help:"Debug draw the deformables transient kinematic particles. [def: false]", type:"Var"},
 {name: "p.Chaos.DebugDraw.Enabled", help:"Whether to debug draw low level physics solver information", type:"Var"},
 {name: "p.Chaos.DebugDraw.MaxLines", help:"Set the maximum number of debug draw lines that can be rendered (to limit perf drops)", type:"Var"},
 {name: "p.Chaos.DebugDraw.Mode", help:"Where to send debug draw commands. 0 = UE Debug Draw; 1 = VisLog; 2 = Both", type:"Var"},
@@ -2341,6 +2258,9 @@ var cvars_prefix = [
 {name: "p.Chaos.DedicatedThreadEnabled", help:"Enables a dedicated physics task/thread for Chaos tasks.0: Disabled1: Enabled", type:"Var"},
 {name: "p.Chaos.Deformable.XPBDBatchSize", help:"Batch size for physics parallel for. [def: 5]", type:"Var"},
 {name: "p.Chaos.Deformable.XPBDBatchThreshold", help:"Batch threshold for physics parallel for. [def: 5]", type:"Var"},
+{name: "p.Chaos.Deformable.XPBDWeakConstraintEnableDraw", help:"Debug draw the double bindings in XPBD weak constraints. [def: false]", type:"Var"},
+{name: "p.Chaos.Deformable.XPBDWeakConstraintLineWidth", help:"Line width for visualizing the double bindings in XPBD weak constraints. [def: 5]", type:"Var"},
+{name: "p.Chaos.Deformable.XPBDWeakConstraintParticleWidth", help:"Line width for visualizing the double bindings in XPBD weak constraints. [def: 20]", type:"Var"},
 {name: "p.Chaos.DisableCollisionParallelFor", help:"Disable parallel execution for Chaos Collisions (also disabled by DisableParticleParallelFor)", type:"Var"},
 {name: "p.Chaos.DisableParticleParallelFor", help:"Disable parallel execution for Chaos Particles (Collisions, ", type:"Var"},
 {name: "p.Chaos.DisablePhysicsParallelFor", help:"Disable parallel execution in Chaos Evolution", type:"Var"},
@@ -3126,6 +3046,7 @@ var cvars_prefix = [
 {name: "r.ComputeFramework.DeferredCompilation", help:"Compile compute graphs on first usage instead of on PostLoad().\n", type:"Var"},
 {name: "r.ComputeFramework.Enable", help:"Enable the Compute Framework.\n", type:"Var"},
 {name: "r.ComputeFramework.RebuildComputeGraphs", help:"Force all loaded UComputeGraph objects to rebuild.", type:"Cmd"},
+{name: "r.ComputeFramework.SortSubmit", help:"Sort submission of work to GPU for optimal scheduling.", type:"Var"},
 {name: "r.ContactShadows", help:" 0: disabled.\n 1: enabled.\n", type:"Var"},
 {name: "r.ContactShadows.NonShadowCastingIntensity", help:"DEPRECATED. Please use the parameters on the Light Component directly instead.\n", type:"Var"},
 {name: "r.CookOutUnusedDetailModeComponents", help:"If set, components which are not relevant for the current detail mode will be cooked out.\n 0: keep components even if not relevant for the current detail mode.\n 1: cook out components not relevant for the current detail mode.\n", type:"Var"},
@@ -3278,6 +3199,7 @@ var cvars_prefix = [
 {name: "r.DumpGPU.Draws", help:"Whether to dump resource after each individual draw call (disabled by default).", type:"Var"},
 {name: "r.DumpGPU.DumpOnScreenshotTest", help:"Allows to filter the tree when using r.DumpGPU command, the pattern match is case sensitive.", type:"Var"},
 {name: "r.DumpGPU.Explore", help:"Whether to open file explorer to where the GPU dump on completion (enabled by default).", type:"Var"},
+{name: "r.DumpGPU.FrameCount", help:"Number of consecutive frames to dump (default=1).", type:"Var"},
 {name: "r.DumpGPU.Mask", help:"Whether to include GPU mask in the name of each Pass (has no effect unless system has multiple GPUs).", type:"Var"},
 {name: "r.DumpGPU.MaxStagingSize", help:"Maximum size of stating resource in MB (default=64).", type:"Var"},
 {name: "r.DumpGPU.PassParameters", help:"Whether to dump the pass parameters.", type:"Var"},
@@ -3687,6 +3609,7 @@ var cvars_prefix = [
 {name: "r.HairStrands.UseCardsInsteadOfStrands", help:"Force cards geometry on all groom elements. If no cards data is available, nothing will be displayed", type:"Var"},
 {name: "r.HairStrands.UseGPUPositionOffset", help:"Use GPU position offset to improve hair strands position precision.", type:"Var"},
 {name: "r.HairStrands.UseProxyLocalToWorld", help:"Enable the use of the groom proxy local to world instead of extracting it from the game thread.", type:"Var"},
+{name: "r.HairStrands.UseSkelMeshPersistentPrimitiveIndex", help:"Use persistent primitive index for skel. mesh lookup (experimental).", type:"Var"},
 {name: "r.HairStrands.VelocityMagnitudeScale", help:"Velocity magnitude (in pixel) at which a hair will reach its pic velocity-rasterization-scale under motion to reduce aliasing. Default is 100.", type:"Var"},
 {name: "r.HairStrands.VelocityRasterizationScale", help:"Rasterization scale to snap strand to pixel under high velocity", type:"Var"},
 {name: "r.HairStrands.VelocityThreshold", help:"Threshold value (in pixel) above which a pixel is forced to be resolve with responsive AA (in order to avoid smearing). Default is 3.", type:"Var"},
@@ -3880,6 +3803,7 @@ var cvars_prefix = [
 {name: "r.Lumen.HardwareRayTracing.LightingMode", help:"Determines the lighting mode (Default = 0)\n0: interpolate final lighting from the surface cache\n1: evaluate material, and interpolate irradiance and indirect irradiance from the surface cache\n2: evaluate material and direct lighting, and interpolate indirect irradiance from the surface cache\n3: evaluate material, direct lighting, and unshadowed skylighting at the hit point", type:"Var"},
 {name: "r.Lumen.HardwareRayTracing.MaxIterations", help:"Limit number of ray tracing traversal iterations on supported platfoms.\nIncomplete misses will be treated as hitting a black surface (can cause overocculsion).\nIncomplete hits will be treated as a hit (can cause leaking).", type:"Var"},
 {name: "r.Lumen.HardwareRayTracing.MaxTranslucentSkipCount", help:"Determines the maximum number of translucent surfaces skipped during ray traversal (Default = 2)", type:"Var"},
+{name: "r.Lumen.HardwareRayTracing.MinTraceDistanceToSampleSurfaceCache", help:"Ray hit distance from which we can start sampling surface cache in order to fix feedback loop where surface cache texel hits itself and propagates lighting.", type:"Var"},
 {name: "r.Lumen.HardwareRayTracing.PullbackBias", help:"Determines the pull-back bias when resuming a screen-trace ray (default = 8.0)", type:"Var"},
 {name: "r.Lumen.IrradianceFieldGather", help:"Whether to use the Irradiance Field Final Gather, an experimental opaque final gather that interpolates from pre-calculated irradiance in probes for cheaper, but lower quality GI.", type:"Var"},
 {name: "r.Lumen.IrradianceFieldGather.ClipmapDistributionBase", help:"Base of the Pow() that controls the size of each successive clipmap relative to the first.", type:"Var"},
@@ -3925,6 +3849,7 @@ var cvars_prefix = [
 {name: "r.Lumen.Reflections.BilateralFilter.NumSamples", help:"Number of bilateral filter samples.", type:"Var"},
 {name: "r.Lumen.Reflections.BilateralFilter.SpatialKernelRadius", help:"Spatial kernel radius, as a fraction of the viewport size", type:"Var"},
 {name: "r.Lumen.Reflections.BilateralFilter.StrongBlurVarianceThreshold", help:"Pixels whose variance from the spatial resolve filter are higher than this value get a stronger bilateral blur.", type:"Var"},
+{name: "r.Lumen.Reflections.Contrast", help:"Scale Lumen reflection contrast.", type:"Var"},
 {name: "r.Lumen.Reflections.DownsampleFactor", help:"", type:"Var"},
 {name: "r.Lumen.Reflections.GGXSamplingBias", help:"", type:"Var"},
 {name: "r.Lumen.Reflections.HairStrands.ScreenTrace", help:"Whether to trace against hair depth for hair casting shadow onto opaques.", type:"Var"},
@@ -3950,7 +3875,8 @@ var cvars_prefix = [
 {name: "r.Lumen.Reflections.RadianceCache.AngleThresholdScale", help:"Controls when the Radiance Cache is used for distant lighting.  A value of 1 means only use the Radiance Cache when appropriate for the reflection cone, lower values are more aggressive.", type:"Var"},
 {name: "r.Lumen.Reflections.RadianceCache.ReprojectionRadiusScale", help:"Scales the radius of the sphere around each Radiance Cache probe that is intersected for parallax correction when interpolating from the Radiance Cache.", type:"Var"},
 {name: "r.Lumen.Reflections.RoughnessFadeLength", help:"", type:"Var"},
-{name: "r.Lumen.Reflections.SampleSceneColorAtHit", help:"Whether to sample SceneColor on reflection ray hits (both SWRT and HWRT).  Useful for hiding areas where Screen Traces gave up when they went behind a foreground object.", type:"Var"},
+{name: "r.Lumen.Reflections.SampleSceneColorAtHit", help:"Whether to sample SceneColor on reflection ray hits (both SWRT and HWRT). Useful for hiding areas where Screen Traces gave up when they went behind a foreground object. 0 - Disable. 1 - Enable only when screen space traces are enabled. 2 - Always enable.", type:"Var"},
+{name: "r.Lumen.Reflections.SampleSceneColorNormalTreshold", help:"Normal threshold in degrees that controls how close ray hit normal and screen normal have to be, before sampling SceneColor is allowed. 0 - only exactly matching normals allowed. 180 - all normals allowed.", type:"Var"},
 {name: "r.Lumen.Reflections.SampleSceneColorRelativeDepthThickness", help:"Depth threshold that controls how close ray hits have to be to the depth buffer, before sampling SceneColor is allowed.", type:"Var"},
 {name: "r.Lumen.Reflections.ScreenSpaceReconstruction", help:"Whether to use the screen space BRDF reweighting reconstruction", type:"Var"},
 {name: "r.Lumen.Reflections.ScreenSpaceReconstruction.KernelRadius", help:"Screen space reflection filter kernel radius in pixels", type:"Var"},
@@ -3958,6 +3884,7 @@ var cvars_prefix = [
 {name: "r.Lumen.Reflections.ScreenSpaceReconstruction.RoughnessScale", help:"Values higher than 1 allow neighbor traces to be blurred together more aggressively, but is not physically correct.", type:"Var"},
 {name: "r.Lumen.Reflections.ScreenTraces", help:"Whether to trace against the screen for reflections before falling back to other methods.", type:"Var"},
 {name: "r.Lumen.Reflections.SmoothBias", help:"Values larger than 0 apply a global material roughness bias for Lumen Reflections, where 1 is fully mirror.", type:"Var"},
+{name: "r.Lumen.Reflections.SpecularScale", help:"Scale Lumen specular reflection.", type:"Var"},
 {name: "r.Lumen.Reflections.SurfaceCacheFeedback", help:"Whether to allow writing into virtual surface cache feedback buffer from reflection rays.", type:"Var"},
 {name: "r.Lumen.Reflections.Temporal", help:"Whether to use a temporal filter", type:"Var"},
 {name: "r.Lumen.Reflections.Temporal.DistanceThreshold", help:"World space distance threshold needed to discard last frame\'s lighting results.  Lower values reduce ghosting from characters when near a wall but increase flickering artifacts.", type:"Var"},
@@ -3966,6 +3893,7 @@ var cvars_prefix = [
 {name: "r.Lumen.Reflections.TraceCompaction.WaveOps", help:"Whether to use Wave Ops path for trace compaction.", type:"Var"},
 {name: "r.Lumen.Reflections.TraceMeshSDFs", help:"", type:"Var"},
 {name: "r.Lumen.Reflections.VisualizeTracingCoherency", help:"Set to 1 to capture traces from a random wavefront and draw them on the screen. Set to 1 again to re-capture.  Shaders must enable support first, see DEBUG_SUPPORT_VISUALIZE_TRACE_COHERENCY", type:"Var"},
+{name: "r.Lumen.SampleFog", help:"Sample the fog contribution in Lumen tracing. Disabled by default.", type:"Var"},
 {name: "r.Lumen.ScreenProbeGather", help:"Whether to use the Screen Probe Final Gather", type:"Var"},
 {name: "r.Lumen.ScreenProbeGather.AdaptiveProbeAllocationFraction", help:"Fraction of uniform probes to allow for adaptive probe placement.", type:"Var"},
 {name: "r.Lumen.ScreenProbeGather.AdaptiveProbeMinDownsampleFactor", help:"Screen probes will be placed where needed down to this downsample factor of the GBuffer.", type:"Var"},
@@ -4140,7 +4068,6 @@ var cvars_prefix = [
 {name: "r.Lumen.Visualize.ViewMode", help:"When the viewport view-mode is set to \'Lumen Visualization\', this command specifies which of the various channels to display. Values entered other than the allowed values shown below will be ignored.\n  Overview\n  LumenScene\n  ReflectionView\n  SurfaceCache", type:"Var"},
 {name: "r.LumenScene.DirectLighting", help:"", type:"Var"},
 {name: "r.LumenScene.DirectLighting.CloudTransmittance", help:"Whether to sample cloud shadows when avaible.", type:"Var"},
-{name: "r.LumenScene.DirectLighting.ForceShadowMaps", help:"Use shadow maps for all lights casting shadows.", type:"Var"},
 {name: "r.LumenScene.DirectLighting.GlobalSDF.ShadowRayBias", help:"Bias for tracing global SDF shadow rays.", type:"Var"},
 {name: "r.LumenScene.DirectLighting.HardwareRayTracing", help:"Enables hardware ray tracing for Lumen direct lighting (Default = 1)", type:"Var"},
 {name: "r.LumenScene.DirectLighting.HardwareRayTracing.GroupCount", help:"Determines the dispatch group count\n", type:"Var"},
@@ -4153,11 +4080,7 @@ var cvars_prefix = [
 {name: "r.LumenScene.DirectLighting.MeshSDF.ShadowRayBias", help:"Bias for tracing mesh SDF shadow rays.", type:"Var"},
 {name: "r.LumenScene.DirectLighting.OffscreenShadowing.TraceMeshSDFs", help:"Whether to trace against Mesh Signed Distance Fields for offscreen shadowing, or to trace against the lower resolution Global SDF.", type:"Var"},
 {name: "r.LumenScene.DirectLighting.OffscreenShadowingTraceStepFactor", help:"", type:"Var"},
-{name: "r.LumenScene.DirectLighting.ReuseShadowMaps", help:"Whether to use shadow maps for shadowing Lumen Scene, where they are available (onscreen).  Offscreen areas will still use ray tracing.", type:"Var"},
-{name: "r.LumenScene.DirectLighting.ShadowMap.SamplingBias", help:"Bias for sampling shadow maps.", type:"Var"},
 {name: "r.LumenScene.DirectLighting.UpdateFactor", help:"Controls for how many texels direct lighting will be updated every frame. Texels = SurfaceCacheTexels / Factor.", type:"Var"},
-{name: "r.LumenScene.DirectLighting.VirtualShadowMap", help:"Whether to sample virtual shadow when avaible.", type:"Var"},
-{name: "r.LumenScene.DirectLighting.VirtualShadowMap.SamplingBias", help:"Bias for sampling virtual shadow maps.", type:"Var"},
 {name: "r.LumenScene.DistantScene", help:"0: off, 1: on, 2: only on if r.LumenScene.FastCameraMode is enabled", type:"Var"},
 {name: "r.LumenScene.DistantScene.CardResolution", help:"", type:"Var"},
 {name: "r.LumenScene.DistantScene.CascadeDistributionExponent", help:"", type:"Var"},
@@ -4206,7 +4129,6 @@ var cvars_prefix = [
 {name: "r.LumenScene.Radiosity.HardwareRayTracing.SurfaceBias", help:".", type:"Var"},
 {name: "r.LumenScene.Radiosity.HemisphereProbeResolution", help:"Number of traces along one dimension of the hemisphere probe layout.", type:"Var"},
 {name: "r.LumenScene.Radiosity.MaxRayIntensity", help:"Clamps Radiosity trace intensity, relative to current view exposure.  Useful for reducing artifacts from small bright emissive sources, but loses energy and adds view dependence.", type:"Var"},
-{name: "r.LumenScene.Radiosity.MinTraceDistanceToSampleSurface", help:"Ray hit distance from which we can start sampling surface cache in order to fix radiosity feedback loop where surface cache texel hits itself every frame.", type:"Var"},
 {name: "r.LumenScene.Radiosity.ProbeOcclusion", help:"Whether to depth test against the probe hit depths during interpolation and filtering to reduce leaking.  Not available with Software Ray Tracing due to imprecision.", type:"Var"},
 {name: "r.LumenScene.Radiosity.ProbePlaneWeighting", help:"Whether to weight Radiosity probes by plane distance, useful to prevent leaking.", type:"Var"},
 {name: "r.LumenScene.Radiosity.ProbeSpacing", help:"Distance between probes, in Surface Cache texels", type:"Var"},
@@ -4462,6 +4384,7 @@ var cvars_prefix = [
 {name: "r.Nanite.ProgrammableRaster.Shadows", help:"A toggle that allows Nanite programmable raster in shadow passes.\n 0: Programmable raster is disabled\n 1: Programmable raster is enabled (default)", type:"Var"},
 {name: "r.Nanite.ProjectEnabled", help:"This setting allows you to disable Nanite on platforms that support it to reduce the number of shaders. It cannot be used to force Nanite on on unsupported platforms.\n", type:"Var"},
 {name: "r.Nanite.ProxyRenderMode", help:"Render proxy meshes if Nanite is unsupported. 0: Fall back to rendering Nanite proxy meshes if Nanite is unsupported. (default) 1: Disable rendering if Nanite is enabled on a mesh but is unsupported. 2: Disable rendering if Nanite is enabled on a mesh but is unsupported, except for static mesh editor toggle.", type:"Var"},
+{name: "r.Nanite.RasterIndirectionMultiplier", help:"", type:"Var"},
 {name: "r.Nanite.ResummarizeHTile", help:"", type:"Var"},
 {name: "r.Nanite.ShadowRaster.PixelsPerEdgeScaling", help:"Lower limit percentage to scale the Nanite shadow raster MaxPixelsPerEdge value when over budget.", type:"Var"},
 {name: "r.Nanite.ShadowRaster.TimeBudgetMs", help:"Frame\'s time budget for Nanite shadow raster in milliseconds.", type:"Var"},
@@ -4664,6 +4587,7 @@ var cvars_prefix = [
 {name: "r.PSOPrecache.Validation", help:"Check if runtime used PSOs are correctly precached and track information per pass type, vertex factory and cache hit state (default 0).", type:"Var"},
 {name: "r.PSOPrecaching", help:"0 to Disable PSOs precaching\n1 to Enable PSO precaching\n", type:"Var"},
 {name: "r.PSOPrecaching.WaitForHighPriorityRequestsOnly", help:"0 to wait for all pending PSO precache requests during loading (default)g\n1 to only wait for the high priority PSO precache requests during loading\n", type:"Var"},
+{name: "r.PurgeEditorSceneDuringPIE", help:"0 to keep editor scene fully initialized during PIE (default)\n1 to purge editor scene from memory during PIE and restore when the session finishes.", type:"Var"},
 {name: "r.RayTracing", help:"0 to disable ray tracing.\n 0: off\n 1: on", type:"Var"},
 {name: "r.RayTracing.AllowInline", help:"Allow use of Inline Ray Tracing if supported (default=1).", type:"Var"},
 {name: "r.RayTracing.AllowPipeline", help:"Allow use of Ray Tracing pipelines if supported (default=1).", type:"Var"},
@@ -4677,9 +4601,9 @@ var cvars_prefix = [
 {name: "r.RayTracing.CompileMaterialAHS", help:" 0: skip compilation of any-hit shaders for materials (useful if alpha masked or translucent materials are not needed)\n 1: compile any hit shaders for all ray tracing materials (default)\n", type:"Var"},
 {name: "r.RayTracing.CompileMaterialCHS", help:" 0: skip compilation of closest-hit shaders for materials (useful if only shadows or ambient occlusion effects are needed)\n 1: compile closest hit shaders for all ray tracing materials (default)\n", type:"Var"},
 {name: "r.RayTracing.Culling", help:"Enable culling in ray tracing for objects that are behind the camera\n 0: Culling disabled (default)\n 1: Culling by distance and solid angle enabled. Only cull objects behind camera.\n 2: Culling by distance and solid angle enabled. Cull objects in front and behind camera.\n 3: Culling by distance OR solid angle enabled. Cull objects in front and behind camera.", type:"Var"},
-{name: "r.RayTracing.Culling.Angle", help:"Do camera culling for objects behind the camera with a projected angle smaller than this threshold in ray tracing effects (default = 5 degrees )", type:"Var"},
+{name: "r.RayTracing.Culling.Angle", help:"Do camera culling for objects behind the camera with a projected angle smaller than this threshold in ray tracing effects (default = 1 degrees)", type:"Var"},
 {name: "r.RayTracing.Culling.PerInstance", help:"", type:"Var"},
-{name: "r.RayTracing.Culling.Radius", help:"Do camera culling for objects behind the camera outside of this radius in ray tracing effects (default = 10000 (100m))", type:"Var"},
+{name: "r.RayTracing.Culling.Radius", help:"Do camera culling for objects behind the camera outside of this radius in ray tracing effects (default = 30000 (300m))", type:"Var"},
 {name: "r.RayTracing.Culling.UseGroupIds", help:"Cull using aggregate ray tracing group id bounds when defined instead of primitive or instance bounds.", type:"Var"},
 {name: "r.RayTracing.Culling.UseMinDrawDistance", help:"Use min draw distance for culling", type:"Var"},
 {name: "r.RayTracing.Debug.InstanceOverlap.BoundingBoxScale", help:"Scaling factor for instance bounding box extent for avoiding z-fighting. (default = 1.001)\n", type:"Var"},
@@ -4898,6 +4822,7 @@ var cvars_prefix = [
 {name: "r.RDG.TransientAllocator.IndirectArgumentBuffers", help:"Whether indirect argument buffers should use transient resource allocator. Default: 0", type:"Var"},
 {name: "r.RDG.TransientExtractedResources", help:"RDG will allocate extracted resources as transient, unless explicitly marked non-transient by the user. 0: disables external transient resources; 1: enables external transient resources (default); 2: force enables all external transient resources (not recommended);", type:"Var"},
 {name: "r.RDG.TransitionLog", help:"Logs resource transitions to the console.\n 0: disabled(default);\n&gt;0: enabled for N frames;\n&lt;0: enabled;\n", type:"Var"},
+{name: "r.RDG.Validation", help:"Enables validation of correctness in API calls and pass parameter dependencies.\n 0: disabled;\n 1: enabled (default);\n", type:"Var"},
 {name: "r.RDG.VerboseCSVStats", help:"Controls the verbosity of CSV profiling stats for RDG.\n 0: emits one CSV profile for graph execution;\n 1: emits a CSV profile for each phase of graph execution.", type:"Var"},
 {name: "r.ReadBuffer.AlignSize", help:"The alignment size (in instances) to allocate in blocks for rendering read buffers. i.e. 64*1024 = 256k for a float buffer", type:"Var"},
 {name: "r.ReadBuffer.MaxRenderingBytesAllocatedPerFrame", help:"The maximum number of transient rendering read buffer bytes to allocate before we start panic logging who is doing the allocations", type:"Var"},
@@ -5258,6 +5183,7 @@ var cvars_prefix = [
 {name: "r.Shadow.Virtual.SMRT.TexelDitherScaleDirectional", help:"Applies a dither to the shadow map ray casts for directional lights to help hide aliasing due to insufficient shadow resolution.\nSetting this too high can cause shadows light leaks near occluders.", type:"Var"},
 {name: "r.Shadow.Virtual.SMRT.TexelDitherScaleLocal", help:"Applies a dither to the shadow map ray casts for local lights to help hide aliasing due to insufficient shadow resolution.\nSetting this too high can cause shadows light leaks near occluders.", type:"Var"},
 {name: "r.Shadow.Virtual.SubsurfaceShadowMinSourceAngle", help:"Minimum source angle (in degrees) used for shadow &amp; transmittance of sub-surface materials with directional lights", type:"Var"},
+{name: "r.Shadow.Virtual.TranslucentQuality", help:"Quality of shadow for lit translucent surfaces. This will be applied on all translucent surfaces, and has high-performance impact.", type:"Var"},
 {name: "r.Shadow.Virtual.UseFarShadowCulling", help:"Switch between implementing the far shadow culling logic for VSMs.", type:"Var"},
 {name: "r.Shadow.Virtual.UseHZB", help:"Enables HZB for (Nanite) Virtual Shadow Maps - Non-Nanite unfortunately has a separate flag with different semantics: r.Shadow.Virtual.NonNanite.UseHZB.\n 0 - No HZB occlusion culling\n 1 - Approximate Single-pass HZB occlusion culling (using previous frame HZB)\n 2 - Two-pass occlusion culling (default).", type:"Var"},
 {name: "r.Shadow.Virtual.Visualize", help:"When the viewport view-mode is set to \'Virtual Shadow Map Visualization\', this command specifies which of the various channels to display. Values entered other than the allowed values shown below will be ignored.\n  mask\n  mip\n  vpage\n  cache\n  raycount\n  dirty\n  invalid\n  merged\n  debug\n  clipmapvirtual", type:"Var"},
@@ -5449,6 +5375,7 @@ var cvars_prefix = [
 {name: "r.Substrate.DBufferPass.DedicatedTiles", help:"Use dedicated tile for DBuffer application when DBuffer pass is enabled.", type:"Var"},
 {name: "r.Substrate.Debug.AdvancedVisualizationShaders", help:"Enable advanced Substrate material debug visualization shaders. Base pass shaders can output such advanced data.", type:"Var"},
 {name: "r.Substrate.Debug.PeelLayersAboveDepth", help:"Substrate debug control to progressively peel off materials layer by layer.", type:"Var"},
+{name: "r.Substrate.Debug.RoughnessTracking", help:"Substrate debug control to disable roughness tracking, e.g. top layer roughness affecting bottom layer roughness to simulate light scattering.", type:"Var"},
 {name: "r.Substrate.OpaqueMaterialRoughRefraction", help:"Enable Substrate opaque material rough refractions effect from top layers over layers below.", type:"Var"},
 {name: "r.Substrate.OpaqueMaterialRoughRefraction.BlurScale", help:"Scale opaque rough refraction strengh for debug purposes.", type:"Var"},
 {name: "r.Substrate.RoughDiffuse", help:"Enable Substrate rough diffuse model (works only if r.Material.RoughDiffuse is enabled in the project settings). Togglable at runtime", type:"Var"},
@@ -5528,28 +5455,28 @@ var cvars_prefix = [
 {name: "r.TranslucentVolumeFOVSnapFactor", help:"FOV will be snapped to a factor of this before computing volume bounds.", type:"Var"},
 {name: "r.TranslucentVolumeMinFOV", help:"Minimum FOV for translucent lighting volume.  Prevents popping in lighting when zooming in.", type:"Var"},
 {name: "r.TriangleOrderOptimization", help:"Controls the algorithm to use when optimizing the triangle order for the post-transform cache.\n0: Use NVTriStrip (slower)\n1: Use Forsyth algorithm (fastest)(default)2: No triangle order optimization. (least efficient, debugging purposes only)", type:"Var"},
-{name: "r.TSR.AsyncCompute", help:"Whether to run TSR on async compute. Some TSR passes can overlap with previous passe.\n 0: Disabled (default);\n 1: Only ClearPrevTextures pass;\n 2: Only ClearPrevTextures through DecimateHistory passes;\n 3: All passes;", type:"Var"},
+{name: "r.TSR.AsyncCompute", help:"Controls how TSR run on async compute. Some TSR passes can overlap with previous passes.\n 0: Disabled (default);\n 1: Run on async compute only passes that are completly independent from any intermediary resource of this frame, namely ClearPrevTextures and ForwardScatterDepth passes;\n 2: Run on async compute only passes that are completly independent or only dependent on the depth and velocity buffer which can overlap for instance with translucency or DOF. Any passes on critical path remains on the graphics queue;\n 3: Run all passes on async compute;", type:"Var"},
 {name: "r.TSR.Debug.ArraySize", help:"Size of array for the TSR.Debug.* RDG textures", type:"Var"},
 {name: "r.TSR.Debug.SetupExtraPasses", help:"Whether to enable the debug passes", type:"Var"},
 {name: "r.TSR.History.GrandReprojection", help:"Experimental functionality to keep higher sharpness in TSR\'s history in motion.", type:"Var"},
-{name: "r.TSR.History.R11G11B10", help:"Select the bitdepth of the history.", type:"Var"},
-{name: "r.TSR.History.SampleCount", help:"Maximum number sample for each output pixel in the history.", type:"Var"},
-{name: "r.TSR.History.ScreenPercentage", help:"Size of TSR\'s history.", type:"Var"},
+{name: "r.TSR.History.R11G11B10", help:"Select the bitdepth of the history. r.TSR.History.R11G11B10=1 Saves memory bandwidth that is of particular interest of the TSR\'s UpdateHistory\'s runtime performance by saving memory both at previous frame\'s history reprojection and write out of the output and new history.\nThis optimisation is unsupported with r.PostProcessing.PropagateAlpha=1.\n\nPlease also not that increasing r.TSR.History.ScreenPercentage=200 adds 2 additional implicit encoding bits in the history compared to the TSR.Output\'s bitdepth thanks to the downscaling pass from TSR history resolution to TSR output resolution.", type:"Var"},
+{name: "r.TSR.History.SampleCount", help:"Maximum number sample for each output pixel in the history. Higher values means more stability on highlights on static images, but may introduce additional ghosting on firefliers style of VFX. Minimum value supported is 8.0 as TSR was in 5.0 and 5.1. Maximum value possible due to the encoding of the TSR.History.Metadata is 32.0. Defaults to 16.0.", type:"Var"},
+{name: "r.TSR.History.ScreenPercentage", help:"Resolution multiplier of the history of TSR based of output resolution. While increasing the resolution adds runtime cost to TSR, it allows to maintain a better sharpness and stability of the details stored in history through out the reprojection.\n\nSetting to 200 brings on a very particular property relying on NyQuist-Shannon sampling theorem that establishes a sufficient condition for the sample rate of the accumulated details in the history. As a result only values between 100 and 200 are supported.\nIt is controlled by default in the anti-aliasing scalability group set to 200 on Epic and Cinematic, 100 otherwise.", type:"Var"},
 {name: "r.TSR.History.SeparateTranslucency", help:"Whether separate translucency should be accumulated separatly.", type:"Var"},
-{name: "r.TSR.History.UpdateQuality", help:"Select the quality of the history update.", type:"Var"},
-{name: "r.TSR.RejectionAntiAliasingQuality", help:"Controls the quality of spatial anti-aliasing on history rejection (default=1).", type:"Var"},
-{name: "r.TSR.ShadingRejection.Flickering", help:"Whether to enable the flickering detection heuristic.\n", type:"Var"},
-{name: "r.TSR.ShadingRejection.Flickering.AdjustToFrameRate", help:"Whether TSR settings should adjust to frame rate below r.TSR.ShadingRejection.Flickering.FrameRateCap (Enabled by default, meant for exclusive use of EngineTest).\n", type:"Var"},
-{name: "r.TSR.ShadingRejection.Flickering.FrameRateCap", help:"Framerate cap at which point there is no frame rate adjustment anymore.\n", type:"Var"},
-{name: "r.TSR.ShadingRejection.Flickering.MaxParralaxVelocity", help:"Maximum parralax velocity in 1080p at frame rate defined by r.TSR.ShadingRejection.Flickering.FrameRateCap pixels allowed before diminishing flickering.\n", type:"Var"},
-{name: "r.TSR.ShadingRejection.Flickering.Period", help:"Periode in 60hz frames in which luma oscilations at equal or greater frequency is considered flickering and should ghost (Default=3.0).\n", type:"Var"},
-{name: "r.TSR.ShadingRejection.SampleCount", help:"Maximum number of sample in each output pixel of the history after total shading rejection.", type:"Var"},
-{name: "r.TSR.Translucency.EnableResponiveAA", help:"Whether the responsive AA should keep history fully clamped.", type:"Var"},
-{name: "r.TSR.Translucency.HighlightLuminance", help:"Sets the liminance at which translucency is considered an highlights (default=-1.0).", type:"Var"},
-{name: "r.TSR.Velocity.Extrapolation", help:"Defines how much the velocity should be extrapolated on geometric discontinuities (Default = 1.0f).", type:"Var"},
-{name: "r.TSR.Velocity.WeightClampingPixelSpeed", help:"Defines the output pixel velocity at which the the high frequencies of the history get\'s their contributing weight clamped. Smallest reduce blur in movement (Default = 1.0f).", type:"Var"},
-{name: "r.TSR.Velocity.WeightClampingSampleCount", help:"Sample count in history pixel to clamp history to when output pixel velocity reach r.TSR.Velocity.WeightClampingPixelSpeed (Default = 4.0f).", type:"Var"},
-{name: "r.TSR.WaveOps", help:"Whether to use wave ops in the shading rejection heuristics", type:"Var"},
+{name: "r.TSR.History.UpdateQuality", help:"Selects shader permutation of the quality of the update of the history in the TSR HistoryUpdate pass currently driven by the sg.AntiAliasingQuality scalability group. For further details about what each offers, you are invited to look at DIM_UPDATE_QUALITY in TSRUpdateHistory.usf and customise to your need.", type:"Var"},
+{name: "r.TSR.RejectionAntiAliasingQuality", help:"Controls the quality of TSR\'s built-in spatial anti-aliasing technology when the history needs to be rejected. While this may not be critical when the rendering resolution is not much lowered than display resolution, this technic however becomes essential to hide lower rendering resolution rendering because of two reasons:\n - the screen space size of aliasing is inverse proportional to rendering resolution;\n - rendering at lower resolution means need more frame to reach at least 1 rendered pixel per display pixel.By default, it is only disabled by default in the low anti-aliasing scalability group.", type:"Var"},
+{name: "r.TSR.ShadingRejection.Flickering", help:"Instability in TSR output 99% of the time coming from instability of the shading rejection, for different reasons:\n - One first source of instability is most famously moire pattern between structured geometry and the rendering pixel grid changing every frame due to the offset of the jittering pixel grid offset;\n - Another source of instability can happen on extrem geometric complexity due to temporal history\'s chicken-and-egg problem that can not be overcome by other mechanisms in place in TSR\'s RejectHistory pass: how can the history be identical to rendered frame if the amount of details you have in the rendered frame is not in history? how can the history accumulate details if the history is too different from the rendered frame?\n\nWhen enabled, this heuristic monitor how the luminance of the scene right before any translucency drawing stored in the TSR.Moire.Luma resource how it involves over successive frames. And if it is detected to constantly flicker regularily above a certain threshold defined with this r.TSR.ShadingRejection.Flickering.* cvars, the heuristic attempts to stabilize the image by letting ghost within luminance boundary tied to the amplititude of flickering.\n\nOne particular caveat of this heuristic is that any opaque geometry with incorrect motion vector can make a pixel look identically flickery quicking this heuristic in and leaving undesired ghosting effects on the said geometry. When that happens, it is highly encourage to verify the motion vector through the VisualizeMotionBlur show flag and how these motion vectors are able to reproject previous frame with the VisualizeReprojection show flag.\n\nThe variable to countrol the frame frequency at which a pixel is considered flickery and needs to be stabilized with this heuristic is defined with the r.TSR.ShadingRejection.Flickering.Period in frames. For instance, a value r.TSR.ShadingRejection.Flickering.Period=3, it means any pixel that have its luminance changing of variation every more often than every frames is considered flickering.\n\nHowever another caveats on this boundary between flickering pixel versus animated pixel is that: flickering happens regardless of frame rate, whereas a visual effects that are/should be based on time and are therefore independent of the frame rate. This mean that a visual effect that looks smooth at 60hz might appear to \'flicker\' at lower frame rates, like 24hz for instance.\nTo make sure a visual effect authored by an artists doesn\'t start to ghost of frame rate, r.TSR.ShadingRejection.Flickering.AdjustToFrameRate is enabled by default such that this frame frequency boundary is automatically when the frame rate drops below a refresh rate below r.TSR.ShadingRejection.Flickering.FrameRateCap.\n\nWhile r.TSR.ShadingRejection.Flickering is controled based of scalability settings turn on/off this heuristic on lower/high-end GPU the other r.TSR.ShadingRejection.Flickering.* can be set orthogonally in the Project\'s DefaultEngine.ini for a consistent behavior across all platforms.\n\nIt is enabled by default in the anti-aliasing scalability group High, Epic and Cinematic.", type:"Var"},
+{name: "r.TSR.ShadingRejection.Flickering.AdjustToFrameRate", help:"Whether r.TSR.ShadingRejection.Flickering.Period settings should adjust to frame rate when below r.TSR.ShadingRejection.Flickering.FrameRateCap. Please read r.TSR.ShadingRejection.Flickering\'s help for further details. (Enabled by default).", type:"Var"},
+{name: "r.TSR.ShadingRejection.Flickering.FrameRateCap", help:"Framerate cap in hertz at which point there is automatic adjustment of r.TSR.ShadingRejection.Flickering.Period when the rendering frame rate is lower. Please read r.TSR.ShadingRejection.Flickering\'s help for further details. (Default to 60hz)", type:"Var"},
+{name: "r.TSR.ShadingRejection.Flickering.MaxParallaxVelocity", help:"Some material might for instance might do something like parallax occlusion mapping such as CitySample\'s buildings\' window\'s interiors. This often can not render accurately a motion vector of this fake interior geometry and therefore make the heuristic believe it is in fact flickering.\n\nThis variable define the parallax velocity in 1080p pixel at frame rate defined by r.TSR.ShadingRejection.Flickering.FrameRateCap at which point the heuristic should be disabled to not ghost. \n(Default to 10 pixels 1080p).\n", type:"Var"},
+{name: "r.TSR.ShadingRejection.Flickering.Period", help:"Periode in frames in which luma oscilations at equal or greater frequency is considered flickering and should ghost to stabilize the image Please read r.TSR.ShadingRejection.Flickering\'s help for further details. (Default to 3 frames).", type:"Var"},
+{name: "r.TSR.ShadingRejection.SampleCount", help:"Maximum number of sample in each output pixel of the history after total shading rejection.\n\nLower values means higher clarity of the image after shading rejection of the history, but at the trade of higher instability of the pixel on following frames accumulating new details which can be distracting to the human eye (Defaults to 2.0).", type:"Var"},
+{name: "r.TSR.Subpixel.DepthMaxAge", help:"Maximum age in frames of subpixel\'s depth kept in history for their self reprojection (default to 3 frames).", type:"Var"},
+{name: "r.TSR.Subpixel.IncludeMovingDepth", help:"Whether the depth of moving subpixel detail should also be included in the subpixel depth history for their reprojection. This is a really bad idea to turn this on because it is impossible how a moving object\'s velocity involves overtime when it\'s only occasionally drawing its velocity. (disabled by default).", type:"Var"},
+{name: "r.TSR.Subpixel.Method", help:"One particular challenge of Nanite amount of details is that sometimes these details can be thiner than a rendering pixel in which case they only render in some frames. When that happens, it means neither depth or velocity buffer to be able to reproject them. This is for instance visible with the `vis SceneDepthZ` command.\nThis settings control the method to reproject and/or discard the subpixel details.\n 0: disable subpixel details accumulation in history which means all this these subpixel features may ghost; \n 1: accumulate how much subpixel detail can paralax under movement of their background for history rejection which allow minimise amount of ghosting but at the expense of some image stability on these very thin geometry.\n 2: accumulate subpixel details\' closest depth to be able to reproject them even when not drawing in depth/velocity buffer which works great for static geometry but not so much for any moving geometry (default)\n", type:"Var"},
+{name: "r.TSR.Velocity.WeightClampingPixelSpeed", help:"Defines the output pixel velocity at which the the high frequencies of the history get\'s their contributing weight clamped. It\'s basically to lerp the effect of r.TSR.Velocity.WeightClampingSampleCount when the pixel velocity get smaller than r.TSR.Velocity.WeightClampingPixelSpeed. (Default = 1.0f).", type:"Var"},
+{name: "r.TSR.Velocity.WeightClampingSampleCount", help:"Number of sample to count to in history pixel to clamp history to when output pixel velocity reach r.TSR.Velocity.WeightClampingPixelSpeed. Higher value means higher stability on movement, but at the expense of additional blur due to successive convolution of each history reprojection.\n\nIt is possible to visualize the number of sample in TSR history with the console command `vis TSR.History.Metadata`.\n\nPlease note this clamp the sample count in history pixel, not output pixel, and therefore lower values are by designed less noticeable with higher r.TSR.History.ScreenPercentage. This is done so such that increasing r.TSR.History.ScreenPercentage uniterally &amp; automatically give more temporal stability and maintaining sharpness of the details reprojection at the expense of that extra runtime cost regardless of this setting.\n\nA story telling game might preferer to keep this 4.0 for a \'cinematic look\' whereas a competitive game like Fortnite would preferer to lower that to 2.0. (Default = 4.0f).", type:"Var"},
+{name: "r.TSR.WaveOps", help:"Whether to use wave ops in the shading rejection heuristics to speeds up convolutions.\n\nThe shading rejection heuristic optimisation can be particularily hard for shader compiler and hit bug in them causing corruption/quality loss.\n\nNote this optimisation is currently disabled on SPIRV platforms (mainly Vulkan and Metal) due to 5min+ compilation times in SPIRV backend of DXC which is not great for editor startup.", type:"Var"},
 {name: "r.UITextureLODBias", help:"Extra LOD bias to apply to UI textures. (default=0)", type:"Var"},
 {name: "r.UniformBufferPooling", help:"If we pool object in RHICreateUniformBuffer to have less real API calls to create buffers\n 0: off (for debugging)\n 1: on (optimization)", type:"Var"},
 {name: "r.UniformExpressionCacheAsyncUpdates", help:"Whether to allow async updates of uniform expression caches.", type:"Var"},
@@ -5938,6 +5865,7 @@ var cvars_prefix = [
 {name: "Sequencer.ThreadedEvaluation.AllocationThreshold", help:"(Default: 32) Defines the entity allocation fragmentation threshold above which threaded evaluation will be used.\n", type:"Var"},
 {name: "Sequencer.ThreadedEvaluation.EntityThreshold", help:"(Default: 256) Defines the number of entities that need to exist to justify threaded evaluation.\n", type:"Var"},
 {name: "Sequencer.TickIntervalGroupingResolutionMs", help:"Defines the maximum resolution for actor tick interval groupings. Bigger numbers will group more actors together when they have custom tick intervals, but will lead to less accurate intervals.\n", type:"Var"},
+{name: "Sequencer.TimeUndo", help:"Enable/disable ability to undo time when making changes", type:"Var"},
 {name: "Sequencer.UseOldSequencerTrails", help:"If true show old motion trails, if false use new editable motion trails.", type:"Var"},
 {name: "Sequencer.VolatileSequencesInEditor", help:"(Default: 1) When non-zero, all assets will be treated as volatile in editor. Can be disabled to bypass volatility checks in-editor for more representative runtime performance metrics.\n", type:"Var"},
 {name: "SequenceRecorder", help:"Enables the Sequence Recorder tab", type:"Cmd"},
@@ -6065,7 +5993,6 @@ var cvars_prefix = [
 {name: "ShowFlag.LumenGlobalIllumination", help:"Allows to override a specific showflag (works in editor and game, \"show\" only works in game and UI only in editor)\nUseful to run a build many time with the same showflags (when put in consolevariables.ini like \"showflag.abc=0\")\n 0: force the showflag to be OFF\n 1: force the showflag to be ON\n 2: do not override this showflag (default)", type:"Var"},
 {name: "ShowFlag.LumenGlobalTraces", help:"Allows to override a specific showflag (works in editor and game, \"show\" only works in game and UI only in editor)\nUseful to run a build many time with the same showflags (when put in consolevariables.ini like \"showflag.abc=0\")\n 0: force the showflag to be OFF\n 1: force the showflag to be ON\n 2: do not override this showflag (default)", type:"Var"},
 {name: "ShowFlag.LumenReflections", help:"Allows to override a specific showflag (works in editor and game, \"show\" only works in game and UI only in editor)\nUseful to run a build many time with the same showflags (when put in consolevariables.ini like \"showflag.abc=0\")\n 0: force the showflag to be OFF\n 1: force the showflag to be ON\n 2: do not override this showflag (default)", type:"Var"},
-{name: "ShowFlag.LumenReuseShadowMaps", help:"Allows to override a specific showflag (works in editor and game, \"show\" only works in game and UI only in editor)\nUseful to run a build many time with the same showflags (when put in consolevariables.ini like \"showflag.abc=0\")\n 0: force the showflag to be OFF\n 1: force the showflag to be ON\n 2: do not override this showflag (default)", type:"Var"},
 {name: "ShowFlag.LumenScreenTraces", help:"Allows to override a specific showflag (works in editor and game, \"show\" only works in game and UI only in editor)\nUseful to run a build many time with the same showflags (when put in consolevariables.ini like \"showflag.abc=0\")\n 0: force the showflag to be OFF\n 1: force the showflag to be ON\n 2: do not override this showflag (default)", type:"Var"},
 {name: "ShowFlag.LumenSecondaryBounces", help:"Allows to override a specific showflag (works in editor and game, \"show\" only works in game and UI only in editor)\nUseful to run a build many time with the same showflags (when put in consolevariables.ini like \"showflag.abc=0\")\n 0: force the showflag to be OFF\n 1: force the showflag to be ON\n 2: do not override this showflag (default)", type:"Var"},
 {name: "ShowFlag.LumenShortRangeAmbientOcclusion", help:"Allows to override a specific showflag (works in editor and game, \"show\" only works in game and UI only in editor)\nUseful to run a build many time with the same showflags (when put in consolevariables.ini like \"showflag.abc=0\")\n 0: force the showflag to be OFF\n 1: force the showflag to be ON\n 2: do not override this showflag (default)", type:"Var"},
@@ -6175,6 +6102,7 @@ var cvars_prefix = [
 {name: "ShowFlag.VisualizeSSR", help:"Allows to override a specific showflag (works in editor and game, \"show\" only works in game and UI only in editor)\nUseful to run a build many time with the same showflags (when put in consolevariables.ini like \"showflag.abc=0\")\n 0: force the showflag to be OFF\n 1: force the showflag to be ON\n 2: do not override this showflag (default)", type:"Var"},
 {name: "ShowFlag.VisualizeSSS", help:"Allows to override a specific showflag (works in editor and game, \"show\" only works in game and UI only in editor)\nUseful to run a build many time with the same showflags (when put in consolevariables.ini like \"showflag.abc=0\")\n 0: force the showflag to be OFF\n 1: force the showflag to be ON\n 2: do not override this showflag (default)", type:"Var"},
 {name: "ShowFlag.VisualizeSubstrate", help:"Allows to override a specific showflag (works in editor and game, \"show\" only works in game and UI only in editor)\nUseful to run a build many time with the same showflags (when put in consolevariables.ini like \"showflag.abc=0\")\n 0: force the showflag to be OFF\n 1: force the showflag to be ON\n 2: do not override this showflag (default)", type:"Var"},
+{name: "ShowFlag.VisualizeTemporalUpscaler", help:"Allows to override a specific showflag (works in editor and game, \"show\" only works in game and UI only in editor)\nUseful to run a build many time with the same showflags (when put in consolevariables.ini like \"showflag.abc=0\")\n 0: force the showflag to be OFF\n 1: force the showflag to be ON\n 2: do not override this showflag (default)", type:"Var"},
 {name: "ShowFlag.VisualizeVirtualShadowMap", help:"Allows to override a specific showflag (works in editor and game, \"show\" only works in game and UI only in editor)\nUseful to run a build many time with the same showflags (when put in consolevariables.ini like \"showflag.abc=0\")\n 0: force the showflag to be OFF\n 1: force the showflag to be ON\n 2: do not override this showflag (default)", type:"Var"},
 {name: "ShowFlag.VisualizeVolumetricCloudConservativeDensity", help:"Allows to override a specific showflag (works in editor and game, \"show\" only works in game and UI only in editor)\nUseful to run a build many time with the same showflags (when put in consolevariables.ini like \"showflag.abc=0\")\n 0: force the showflag to be OFF\n 1: force the showflag to be ON\n 2: do not override this showflag (default)", type:"Var"},
 {name: "ShowFlag.VisualizeVolumetricCloudEmptySpaceSkipping", help:"Allows to override a specific showflag (works in editor and game, \"show\" only works in game and UI only in editor)\nUseful to run a build many time with the same showflags (when put in consolevariables.ini like \"showflag.abc=0\")\n 0: force the showflag to be OFF\n 1: force the showflag to be ON\n 2: do not override this showflag (default)", type:"Var"},
@@ -6901,33 +6829,17 @@ var cvars_prefix = [
 {name: "wp.Runtime.UseReplayStreamingSources", help:"Set to 1 to use the recorded streaming sources when playing replay.", type:"Var"},
 {name: "XInput.ForceControllerStateUpdate", help:"Force XInput refresh of controller state on each frame.\n0: Not Enabled, 1: Enabled", type:"Var"},
 {name: "XMPP", help:"Sorry: Exec commands have no help", type:"Exec"},
-
-
-   ];
-   
+];
 // -------------------------------------------
-
 // call OnTick every x ms
 setInterval(function () {OnTick()}, 20);
 //setInterval(function(){alert('Hello')},3000);
-
 BuildCounts();
-
 // by default we show all variables
 document.forms[0]["input1"].value = "";
 // initiate search
 OnInputChange();
-   
-  
-    
-    
 <span class="html-tag">&lt;/script&gt;</span>
-
-
-
-
 <span class="html-tag">&lt;/body&gt;</span>
 <span class="html-tag">&lt;/html&gt;</span>
-
-
 <span class="html-end-of-file"></span></tbody></table></body></html>
